@@ -26,6 +26,10 @@ def main():
     
     AsteroidField.containers = (updatable, ) # asteroid field is only updatable
     player = Player(x=SCREEN_WIDTH/2, y=SCREEN_HEIGHT/2)
+    # rate limiting mechanism 
+    # Player.timer = 0
+
+
     asteroid_field = AsteroidField()
 
     while(True):
